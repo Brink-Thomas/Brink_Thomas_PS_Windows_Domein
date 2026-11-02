@@ -8,11 +8,11 @@
     DomainDN      = 'DC=HQ,DC=company,DC=com' # Can be explicit or left ''
 
     # ---- Machines ----------------------------------------------------------
-    Dc1Name       = 'DC1'
+    Dc1Name       = 'WIN00-DC1'
     Dc1Ip         = '192.168.1.2'
-    Dc2Name       = 'DC2'
+    Dc2Name       = 'WIN00-DC2'
     Dc2Ip         = '192.168.1.3'
-    MsHostname    = 'MS'
+    MsHostname    = 'WIN00-MS'
 
     # ---- DHCP --------------------------------------------------------------
     # Scopes to protect with failover. Empty array = every scope found on DC1.
