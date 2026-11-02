@@ -3,20 +3,20 @@
 # ============================================================================
 @{
     # ---- Domain ------------------------------------------------------------
-    DomainFqdn    = 'lab.local'
-    DomainNetBios = 'LAB'
-    DomainDN      = ''            # leave empty -> derived from DomainFqdn (DC=lab,DC=local)
+    DomainFqdn    = 'HQ.company.com'
+    DomainNetBios = 'HQ'
+    DomainDN      = 'DC=HQ,DC=company,DC=com' # Can be explicit or left ''
 
     # ---- Machines ----------------------------------------------------------
     Dc1Name       = 'DC1'
-    Dc1Ip         = '192.168.10.10'
+    Dc1Ip         = '192.168.1.2'
     Dc2Name       = 'DC2'
-    Dc2Ip         = '192.168.10.11'
+    Dc2Ip         = '192.168.1.3'
     MsHostname    = 'MS'
 
     # ---- DHCP --------------------------------------------------------------
     # Scopes to protect with failover. Empty array = every scope found on DC1.
-    ScopeIds             = @('192.168.10.0')
+    ScopeIds             = @('192.168.1.0')
     FailoverName         = 'DC1-DC2-Failover'
     FailoverMode         = 'LoadBalance'      # LoadBalance | HotStandby
     LoadBalancePercent   = 50                 # LoadBalance: % served by DC1
@@ -38,9 +38,9 @@
     ChangePasswordAtLogon = $false
 
     # ---- OU / UPN ----------------------------------------------------------
-    CompanyOuName = 'Contoso'                 # root business OU
-    CompanyOuDN   = 'OU=Contoso,{DomainDN}'   # {DomainDN} is expanded automatically
-    UpnSuffix     = 'contoso.com'
+    CompanyOuName = 'Bedrijf'
+    CompanyOuDN   = 'OU=Bedrijf,{DomainDN}'   # {DomainDN} is expanded automatically
+    UpnSuffix     = 'company.be'
     ProtectOUs    = $true                     # ProtectedFromAccidentalDeletion
     OrgStructure  = @(
         @{ Name = 'Board';      SubOUs = @('Users','Groups') }
