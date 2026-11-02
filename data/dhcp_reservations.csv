@@ -1,0 +1,6 @@
+ScopeId,IPAddress,ClientId,Name,Description
+192.168.10.0,192.168.10.50,00-15-5D-01-02-01,PRN-HR-01,HR floor network printer
+192.168.10.0,192.168.10.51,00-15-5D-01-02-02,PRN-IT-01,IT floor network printer
+192.168.10.0,192.168.10.52,00-15-5D-01-02-03,NAS-01,Lab NAS appliance
+192.168.10.0,192.168.10.53,00-15-5D-01-02-04,CAM-ENTRY,Entrance IP camera
+192.168.10.0,192.168.10.54,00-15-5D-01-02-05,WIN11-CLIENT,Windows 11 lab client

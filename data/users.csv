@@ -1,0 +1,7 @@
+FirstName,LastName,SamAccountName,OUPath,Group,Password
+Alice,Martin,amartin,"OU=Users,OU=HR,OU=Contoso,{DomainDN}",GG_HR,P@ssw0rd!2026
+Bob,Dupont,bdupont,"OU=Users,OU=IT,OU=Contoso,{DomainDN}",GG_IT,P@ssw0rd!2026
+Carla,Janssens,cjanssens,"OU=Users,OU=Finance,OU=Contoso,{DomainDN}",GG_Finance,P@ssw0rd!2026
+David,Peeters,dpeeters,"OU=Users,OU=Operations,OU=Contoso,{DomainDN}",GG_Operations,P@ssw0rd!2026
+Emma,Claes,eclaes,"OU=Users,OU=Board,OU=Contoso,{DomainDN}",GG_Board,P@ssw0rd!2026
+Farid,Benali,fbenali,"OU=Users,OU=IT,OU=Contoso,{DomainDN}",GG_IT,P@ssw0rd!2026
